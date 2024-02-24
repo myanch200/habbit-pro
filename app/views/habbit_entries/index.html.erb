@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Habbit entries</h1>
+
+<div id="habbit_entries">
+  <% @habbit_entries.each do |habbit_entry| %>
+    <%= render habbit_entry %>
+    <p>
+      <%= link_to "Show this habbit entry", habbit_entry %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New habbit entry", new_habbit_entry_path %>

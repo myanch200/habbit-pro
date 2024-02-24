@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @habbit_entry %>
+
+<div>
+  <%= link_to "Edit this habbit entry", edit_habbit_entry_path(@habbit_entry) %> |
+  <%= link_to "Back to habbit entries", habbit_entries_path %>
+
+  <%= button_to "Destroy this habbit entry", @habbit_entry, method: :delete %>
+</div>
